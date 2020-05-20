@@ -54,7 +54,7 @@ public class Client {
         Arrays.fill(recv_buffer, (byte)0);
         socket.receive(recv_packet);
         recv = new String(recv_packet.getData());
-        System.out.println("[+] Get response from "+recv_packet.getAddress()+":"+recv_packet.getPort()+" : "+ new String(recv_packet.getData()));
+        System.out.println("[+] Get response from "+recv_packet.getAddress()+":"+recv_packet.getPort()+" : "+ recv);
         
     }
     public static void main(String[] args) throws Exception {
